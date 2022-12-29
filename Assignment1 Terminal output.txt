@@ -1,0 +1,152 @@
+C:\temp>python pinger2.py -h
+usage: ProgramName [-h] [-l] [-v] [-i IP [IP ...]]
+
+program description
+
+options:
+  -h, --help            show this help message and exit
+  -l, --licence, --license
+                        licence help
+  -v, --version         version help
+  -i IP [IP ...], --ip IP [IP ...]
+                        ip help
+
+C:\temp>python pinger2.py --help
+usage: ProgramName [-h] [-l] [-v] [-i IP [IP ...]]
+
+program description
+
+options:
+  -h, --help            show this help message and exit
+  -l, --licence, --license
+                        licence help
+  -v, --version         version help
+  -i IP [IP ...], --ip IP [IP ...]
+                        ip help
+
+C:\temp>python pinger2.py -l
+Author : Diarmuid O'Briain
+Copyright : Copyright 2021, Institute of Technology Carlow
+Licence : European Union Public Licence v1.2
+
+C:\temp>python pinger2.py -license
+Author : Diarmuid O'Briain
+Copyright : Copyright 2021, Institute of Technology Carlow
+Licence : European Union Public Licence v1.2
+
+C:\temp>--license
+'--license' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\temp>python pinger2.py --license
+Author : Diarmuid O'Briain
+Copyright : Copyright 2021, Institute of Technology Carlow
+Licence : European Union Public Licence v1.2
+
+C:\temp>python pinger2.py -v
+1.0
+
+C:\temp>python pinger2.py --version
+1.0
+
+C:\temp>python pinger2.py -i 192.168.0.1 265.3.2.2 8.8.8.8 1.1.1.1 192.168.0.23
+
+Pinging 192.168.0.1 with 32 bytes of data:
+Request timed out.
+Request timed out.
+Request timed out.
+Request timed out.
+
+Ping statistics for 192.168.0.1:
+    Packets: Sent = 4, Received = 0, Lost = 4 (100% loss),
+
+192.168.0.1 IS UNREACHABLE
+265.3.2.2 - Error: is not a valid IP address
+
+Pinging 8.8.8.8 with 32 bytes of data:
+Reply from 8.8.8.8: bytes=32 time=7ms TTL=107
+Reply from 8.8.8.8: bytes=32 time=9ms TTL=107
+Reply from 8.8.8.8: bytes=32 time=9ms TTL=107
+Reply from 8.8.8.8: bytes=32 time=8ms TTL=107
+
+Ping statistics for 8.8.8.8:
+    Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),
+Approximate round trip times in milli-seconds:
+    Minimum = 7ms, Maximum = 9ms, Average = 8ms
+
+8.8.8.8 IS ALIVE
+
+Pinging 1.1.1.1 with 32 bytes of data:
+Reply from 1.1.1.1: bytes=32 time=12ms TTL=58
+Reply from 1.1.1.1: bytes=32 time=10ms TTL=58
+Reply from 1.1.1.1: bytes=32 time=13ms TTL=58
+Reply from 1.1.1.1: bytes=32 time=13ms TTL=58
+
+Ping statistics for 1.1.1.1:
+    Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),
+Approximate round trip times in milli-seconds:
+    Minimum = 10ms, Maximum = 13ms, Average = 12ms
+
+1.1.1.1 IS ALIVE
+
+Pinging 192.168.0.23 with 32 bytes of data:
+Request timed out.
+Request timed out.
+Request timed out.
+Request timed out.
+
+Ping statistics for 192.168.0.23:
+    Packets: Sent = 4, Received = 0, Lost = 4 (100% loss),
+
+192.168.0.23 IS UNREACHABLE
+
+C:\temp>python pinger2.py --ip 192.168.0.1 265.3.2.2 8.8.8.8 1.1.1.1 192.168.0.23
+
+Pinging 192.168.0.1 with 32 bytes of data:
+Request timed out.
+Request timed out.
+Request timed out.
+Request timed out.
+
+Ping statistics for 192.168.0.1:
+    Packets: Sent = 4, Received = 0, Lost = 4 (100% loss),
+
+192.168.0.1 IS UNREACHABLE
+265.3.2.2 - Error: is not a valid IP address
+
+Pinging 8.8.8.8 with 32 bytes of data:
+Reply from 8.8.8.8: bytes=32 time=9ms TTL=107
+Reply from 8.8.8.8: bytes=32 time=8ms TTL=107
+Reply from 8.8.8.8: bytes=32 time=5ms TTL=107
+Reply from 8.8.8.8: bytes=32 time=20ms TTL=107
+
+Ping statistics for 8.8.8.8:
+    Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),
+Approximate round trip times in milli-seconds:
+    Minimum = 5ms, Maximum = 20ms, Average = 10ms
+
+8.8.8.8 IS ALIVE
+
+Pinging 1.1.1.1 with 32 bytes of data:
+Reply from 1.1.1.1: bytes=32 time=13ms TTL=58
+Reply from 1.1.1.1: bytes=32 time=6ms TTL=58
+Reply from 1.1.1.1: bytes=32 time=15ms TTL=58
+Reply from 1.1.1.1: bytes=32 time=15ms TTL=58
+
+Ping statistics for 1.1.1.1:
+    Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),
+Approximate round trip times in milli-seconds:
+    Minimum = 6ms, Maximum = 15ms, Average = 12ms
+
+1.1.1.1 IS ALIVE
+
+Pinging 192.168.0.23 with 32 bytes of data:
+Request timed out.
+Request timed out.
+Request timed out.
+Request timed out.
+
+Ping statistics for 192.168.0.23:
+    Packets: Sent = 4, Received = 0, Lost = 4 (100% loss),
+
+192.168.0.23 IS UNREACHABLE
